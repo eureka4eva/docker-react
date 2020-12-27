@@ -6,5 +6,5 @@ before_install:
   - docker build -t eureka4eva/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run eureka4eva/docker-react npm run test -- -- coverage
+  - docker run eureka4eva/docker-react npm run test -- --coverage
     
