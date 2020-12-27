@@ -1,4 +1,4 @@
---- 
+sudo: required
 before_install: 
   - "docker build -t eureka4eva/docker-react -f Dockerfile.dev ."
 before_install:
@@ -7,4 +7,3 @@ script:
   - "docker run eureka4eva/docker-react npm run test -- --coverage"
 services: 
   - docker
-sudo: required
