@@ -6,3 +6,12 @@ before_install:
 script: 
   - "docker run eureka4eva/docker-react npm run test -- --coverage"
 
+#deploy:
+  #provider: elasticbeanstalk
+  #region: "us-west-2"
+  #app: "name of the app in aws" e.g docker
+  #env: "Docker-env"
+  #bucket_name: "Amazon S3 name"
+  #bucket_path: "equal to app name"
+  #on:
+    #branch: master
